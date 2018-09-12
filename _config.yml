@@ -84,8 +84,8 @@ author:
   bio              : "Graduate student at Caltech, Computational & Systems Biology"
   location         : "Pasadena, CA"
   employer         :
-  googlescholar    : "http://yourfullgooglescholarurl.com"
-  email            :
+  googlescholar    : 
+  email            : jiangjl_AT_caltech_DOT_edu
   uri              :
   bitbucket        :
   codepen          :
@@ -99,13 +99,13 @@ author:
   instagram        :
   lastfm           :
   linkedin         :
-  orcid            : "http://orcid.org/yourorcidurl"
+  orcid            : #"http://orcid.org/yourorcidurl"
   pinterest        :
   soundcloud       :
   stackoverflow    : # http://stackoverflow.com/users/123456/username
   steam            :
   tumblr           :
-  twitter          : "replacethistwitterhandle"
+  twitter          : #"replacethistwitterhandle"
   vine             :
   weibo            :
   xing             :
