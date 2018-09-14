@@ -8,11 +8,9 @@ redirect_from:
   - /about.html
 ---
 
-I'm currently a graduate student at California Institute of Technology. 
+I'm currently a graduate student at California Institute of Technology. I am interested in the physics of life with quantitive approaches.  
 
 $$ E = m c^2 $$
 
-Example: editing a markdown file for a talk
-![Editing a markdown file for a talk](/images/editing-talk.png)
 
 
