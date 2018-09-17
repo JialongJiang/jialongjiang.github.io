@@ -3,7 +3,7 @@ title: 'Hello World'
 date: 2018-09-14
 permalink: /posts/2018/09/hello_world/
 tags:
-  - monolog
+  - monologue
 ---
 
 Welcome to the world of my website!
