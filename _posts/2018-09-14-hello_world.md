@@ -1,7 +1,7 @@
 ---
 title: 'Hello World'
-date: 2019-08-14
-permalink: /posts/2019/08/hello_world/
+date: 2018-09-14
+permalink: /posts/2018/09/hello_world/
 tags:
   - monolog
 ---
