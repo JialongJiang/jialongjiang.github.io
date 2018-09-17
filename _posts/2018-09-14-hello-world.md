@@ -1,7 +1,7 @@
 ---
 title: 'Hello World'
 date: 2018-09-14
-permalink: /posts/2018/09/hello_world
+permalink: /posts/2018/09/hello-world
 tags:
   - monologe
 ---
