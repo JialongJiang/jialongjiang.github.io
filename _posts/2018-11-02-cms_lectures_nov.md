@@ -24,7 +24,10 @@ Objective-based: k-means, k-median, k-center (minimax radius) 	NP-hard
 
 #### Sampling complexity of algorithms selection
 
-Algorithm family $F$, instances $D$	Approach: find good $\hat{A}$ on samples	Question: how many instances are required to make the performance on training set effective in all $D$  	Uniform convergence; $N=O(\textrm{dim}(F)/\epsilon^2)$ for $\epsilon$-close instances
+Algorithm family $F$, instances $D$	
+Approach: find good $\hat{A}$ on samples	
+Question: how many instances are required to make the performance on training set effective in all $D$  	
+Uniform convergence; $N=O(\textrm{dim}(F)/\epsilon^2)$ for $\epsilon$-close instances
 
 VC-dimension 
 
