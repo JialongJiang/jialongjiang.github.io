@@ -16,7 +16,7 @@ I'll start to post notes on the lectures in Caltech CMS.
 
 #### Introduction
 
-Classical: worst case; most domains are hard	Data driven: leaning & data 	From empirical to formal guarantees
+Classical: worst case; most domains are hard   Data driven: leaning & data   From empirical to formal guarantees
 
 #### Clustering
 
@@ -24,9 +24,8 @@ Objective-based: k-means, k-median, k-center (minimax radius) 	NP-hard
 
 #### Sampling complexity of algorithms selection
 
-Algorithm family $F$, instances $D$	
-Approach: find good $\hat{A}$ on samples	
-Question: how many instances are required to make the performance on training set effective in all $D$  	
+Algorithm family $F$, instances $D$  Approach: find good $\hat{A}$ on samples
+Question: how many instances are required to make the performance on training set effective in all $D$   
 Uniform convergence; $N=O(\textrm{dim}(F)/\epsilon^2)$ for $\epsilon$-close instances
 
 VC-dimension 
