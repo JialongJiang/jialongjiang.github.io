@@ -18,3 +18,7 @@ Experience
 ======
 * Summer 2018: Visiting Student, Sorbonne University, Paris, France
 * Summer 2017: Visiting Undergrad Research Fellow, Harvard University, Cambridge, MA
+
+# Teaching
+
+* Freshman Seminar of Yuanpei College, Peking University, 2015 fall
