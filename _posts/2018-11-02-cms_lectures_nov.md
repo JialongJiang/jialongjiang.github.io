@@ -8,13 +8,13 @@ tags:
 
 I'll start to post notes on the lectures in Caltech CMS.
 
-#Lecture Notes
+# Lecture Notes
 
 ## Data Driven Algorithm Design
 
-###Maria-Florina Balcan, CMU	11/02/18
+### Maria-Florina Balcan, CMU	11/02/18
 
-####Introduction
+#### Introduction
 
 Classical: worst case; most domains are hard
 
