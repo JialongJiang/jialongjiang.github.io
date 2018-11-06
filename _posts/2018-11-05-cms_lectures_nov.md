@@ -124,9 +124,9 @@ Design wave splitter; focus light based on wavelength; micropartical-arrays
 
 Specific forms of integration equation can be efficiently solved in Fourier space. The problem of Gibbs phenomenon can be solved by using some approximation method. As many applications in physics and engineering require solving integration equation related to harmonic waves, the method is very promising. 
 
-##Off-policy Evaluation and Learning in Theory and in the Wild
+## Off-policy Evaluation and Learning in Theory and in the Wild
 
-###Yuxiang Wang, UCSB	11/06/2018
+### Yuxiang Wang, UCSB	11/06/2018
 
 #### Introduction
 
@@ -135,7 +135,7 @@ Contextual bandits model: context; actions; rewards
 Value: expected reward; Data: triplets $(x_i,a_i,r_i)$  
 Average treatment estimation: treatment; response variables; covariates  
 
-####Off-Policy Evaluation
+#### Off-Policy Evaluation
 
 Direct method: fit the model for reward $\hat{r}(x,a)$   
 Importance sampling (Horvitz & Thompson, 1952) unbiased, large variance  
@@ -153,6 +153,7 @@ With an oracle (possibly bad), SWITCH between IPS and oracle estimator: use IPS 
 $$
 \frac{\pi(a|x)}{\mu(a|x)}\leq\tau
 $$
+
 Error bound for SWITCH: variance from truncated IPS + variance from sampling $X$ + bias from oracle 
 Example: multiclass classification data sets
 
