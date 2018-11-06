@@ -104,8 +104,9 @@ Gibbs phenomenon
 Slow-rise windowing / Periodic summation    
 Fourier continuation
 
+
 $$
-I_{wind}(A) = \int_A^A P_1(x,A)\frac{e^{ikx}}{\sqrt{|x|}}dx
+I_{wind}(A) = \int_{-A}^A P_1(x,A)\frac{e^{ikx}}{\sqrt{|x|}}dx
 $$
 
 Spectrum convergence by properties of $P_1(x, A)$  
@@ -122,3 +123,51 @@ Design wave splitter; focus light based on wavelength; micropartical-arrays
 #### Summary
 
 Specific forms of integration equation can be efficiently solved in Fourier space. The problem of Gibbs phenomenon can be solved by using some approximation method. As many applications in physics and engineering require solving integration equation related to harmonic waves, the method is very promising. 
+
+##Off-policy Evaluation and Learning in Theory and in the Wild
+
+###Yuxiang Wang, UCSB	11/06/2018
+
+#### Introduction
+
+Off-policy learning: evaluate algorithm without applying it in real situation  
+Contextual bandits model: context; actions; rewards  
+Value: expected reward; Data: triplets $(x_i,a_i,r_i)$  
+Average treatment estimation: treatment; response variables; covariates  
+
+####Off-Policy Evaluation
+
+Direct method: fit the model for reward $\hat{r}(x,a)$   
+Importance sampling (Horvitz & Thompson, 1952) unbiased, large variance  
+Modeifying importance weights; doubly roubust estimator  
+Optimality: minimax: IPS is optimal in general; new estimator: SWITCH  
+Minimax setup: best possiple worst case in all possible reward distributions  
+Assume bound on the first and second moments   
+Decompositiom: reward randomness + context randomness  
+High variance is required; IPS is asymptotically inefficient  
+Additional assumption is needed for better asymptotic efficiency  
+Classical nonparametirc estimators requrie exponential sample size  
+
+With an oracle (possibly bad), SWITCH between IPS and oracle estimator: use IPS when  
+
+$$
+\frac{\pi(a|x)}{\mu(a|x)}\leq\tau
+$$
+Error bound for SWITCH: variance from truncated IPS + variance from sampling $X$ + bias from oracle 
+Example: multiclass classification data sets
+
+#### Off-Policy Learning
+
+Direct method: without knowing the value of the policy  
+Collabrative filtering: regression on results; feature map  
+Drawbacks of reward model: unrealiable; large searching space; unknown logging policy
+Assumptions: bounded rewards,  
+Classification with cross entropy loss; can be interpretated as first order approximation of IPS  
+Policy imprevement lower bound   
+imitate the policy IML  
+Use as regularization; diagonse confounder; collect new data  
+Logging policy
+
+#### Summary
+
+Using  the historical data to evaluate the possible rewards of a new policy has wide applications. We can model the reward function or directly learn the policy. The large variance of IPS can be alivated by swithing between IPS and reward-based model. The direct learning methods have the interpretation of IML and can be used to investigate more properties of the model. 
