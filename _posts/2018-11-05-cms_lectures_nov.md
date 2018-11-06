@@ -48,7 +48,7 @@ One special property of machine learning problem is that what we care about is t
 
 #### Motivation
 
-Quantum information: quantum relative entropy $\textrm{tr}[X(\log{X}-\log(Y))]$   
+Quantum information: quantum relative entropy $D(X||Y)=\textrm{tr}[X(\log{X}-\log(Y))]$   
 SDP only solve semialgebraic problems, but logarithrms are not   
 Approximations, approximation quality, SDP complexity   
 
@@ -61,16 +61,20 @@ Use projection to make approximation; semidefinite representation of size $d$
  Want: size of representation grow mildly   
 Matrix arg; bimatrix arg; perspective; NC perspective   
 Integral representation
+
 $$
 \log x = \int_0^1 \frac{x-1}{1+\xi(x-1)}d\xi
 $$
+
 Rational, monotone, concave; SDP representation   
 Finite sum approximation $ r_m(x)$; $m$  LMIs of $2\times2$   
 Best quadrature: Gauss-Legendre weights; Pade approxation at $1$   
 Take exponents down: $r_m(x)$ is good approximation at $x\approx1$   
+
 $$
 2^kr_m(x^{1/2^k})
 $$
+
 $m+k$ LMIs of $2\times2$  
 Optimal choice: $m\approx k$    
 Error $\epsilon$, range $[1/a, a]$: $O(\sqrt{-log\epsilon}+\log\log a)$  
@@ -99,9 +103,11 @@ Gibbs phenomenon
 
 Slow-rise windowing / Periodic summation    
 Fourier continuation
+
 $$
 I_{wind}(A) = \int_A^A P_1(x,A)\frac{e^{ikx}}{\sqrt{|x|}}dx
 $$
+
 Spectrum convergence by properties of $P_1(x, A)$  
 Fourier series of non-periodic function: add extra interval, fourier continuation 
 
@@ -112,3 +118,7 @@ Seperate into logical rectangular; Chebyshev rectangular-polar integration
 Waveguide  
 Adjoint optimization for integral-equation methods  
 Design wave splitter; focus light based on wavelength; micropartical-arrays 
+
+#### Summary
+
+Specific forms of integration equation can be efficiently solved in Fourier space. The problem of Gibbs phenomenon can be solved by using some approximation method. As many applications in physics and engineering require solving integration equation related to harmonic waves, the method is very promising. 
