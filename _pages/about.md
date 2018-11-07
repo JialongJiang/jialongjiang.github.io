@@ -17,4 +17,4 @@ I'm currently a graduate student at California Institute of Technology. I am int
 
 I got my B.S. in Integrated Science at Peking University, where I was first exposed to scientific research, and the fancinating area of understanding living systems with quantitative reasonings. Even though I primarily received physics training in my undergrad years, I turn to more mathematical approaches since I came here. Physics models are fun, but sometimes the model selection trap is frustrating. Therefore I'd like to know what can we deduce from more abstract and high-level assumptions, and also how to use them to extract information from experimental data. 
 
-I play guitar fingerstyle in my part time. I enjoyed the variety of techniques in fingerstyle to make different timbres, and also the chord of six strings.
+I play guitar fingerstyle in my part time. I enjoy the variety of techniques in fingerstyle to make different timbres, and also the chord of six strings.
