@@ -1,12 +1,12 @@
 ---
 title: 'Caltech CMS Lectures Nov'
-date: 2018-11-05
-permalink: /posts/2018/09/cms_lectures_nov/
+date: 2018-11-06
+permalink: /posts/2018/11/cms_lectures_nov/
 tags:
   - notes
 ---
 
-I'll start to post notes on the lectures in Caltech CMS.
+I spent a lot time these days attending seminars in CMS on statistics and algorithms. Some were really inspiring while some I could hardly follow. Therefore I decide to take notes for furture reference, and also to cultivate the habit of writing.
 
 # Lecture Notes
 
@@ -58,7 +58,7 @@ Monotone, concave; related: entropy, KL divergence
 Matrix log: apply to eigenvalues; operator monotone, operator concave   
 Matrix entropy: concave; quantum ralative entropy: convex   
 Use projection to make approximation; semidefinite representation of size $d$   
- Want: size of representation grow mildly   
+Want: size of representation grow mildly   
 Matrix arg; bimatrix arg; perspective; NC perspective   
 Integral representation
 
@@ -103,7 +103,6 @@ Gibbs phenomenon
 
 Slow-rise windowing / Periodic summation    
 Fourier continuation
-
 
 $$
 I_{wind}(A) = \int_{-A}^A P_1(x,A)\frac{e^{ikx}}{\sqrt{|x|}}dx
@@ -171,4 +170,4 @@ Logging policy
 
 #### Summary
 
-Using  the historical data to evaluate the possible rewards of a new policy has wide applications. We can model the reward function or directly learn the policy. The large variance of IPS can be alivated by swithing between IPS and reward-based model. The direct learning methods have the interpretation of IML and can be used to investigate more properties of the model. 
+Using the historical data to evaluate the possible rewards of a new policy has wide applications. We can model the reward function or directly learn the policy. The large variance of IPS can be alivated by swithing between IPS and reward-based model. The direct learning methods have the interpretation of IML and can be used to investigate more properties of the model. 
