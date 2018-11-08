@@ -190,7 +190,7 @@ Bioinformatics: doing dynamical programming 37x speedup, 26,000x efficiency
 **Design by cost: Arithmetic is free (particularly low-precision); Memory is expensive; Communication is prohibitively expensive**  
 Local SRAM (KB); On-chip SRAM (MB); LPDDR DRAM(GB)  
 Algorithm changes  
-Darwin accelerators from Graphmap: Filtratio, Alignment  
+Darwin accelerators from Graphmap: Filtration, Alignment  
 The first step needs read memory and hard to improve  
 Reduce the accuracy of the first step and compensating by the second step, which can be accelerated   
 Parallelize; Specialized memory for D-soft bin updates   
