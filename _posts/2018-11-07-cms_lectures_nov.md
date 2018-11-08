@@ -6,7 +6,7 @@ tags:
   - notes
 ---
 
-I'll start to post notes on the lectures in Caltech CMS.
+I spent a lot time these days attending seminars in CMS on statistics and algorithms. Some were really inspiring while some I could hardly follow. Therefore I decide to take notes for furture reference, and also to cultivate the habit of writing.
 
 # Lecture Notes
 
