@@ -1,7 +1,7 @@
 ---
 title: 'Caltech CMS Lectures Nov'
-date: 2018-11-05
-permalink: /posts/2018/09/cms_lectures_nov/
+date: 2018-11-07
+permalink: /posts/2018/11/cms_lectures_nov/
 tags:
   - notes
 ---
@@ -172,3 +172,40 @@ Logging policy
 #### Summary
 
 Using  the historical data to evaluate the possible rewards of a new policy has wide applications. We can model the reward function or directly learn the policy. The large variance of IPS can be alivated by swithing between IPS and reward-based model. The direct learning methods have the interpretation of IML and can be used to investigate more properties of the model. 
+
+## The Future of Computing Domain-Specific Accelerators
+
+### Bill Daily, Stanford / NVIDIA	11/07/2018
+
+#### Introduction
+
+Fast computing, better algorithms, more data   
+Moore's Law is dead: need domain-specific accelerators   
+Parallelism with locality; Special data types and operations; Optimized memory; Reduced or Amortized overhead; Algorithm-architecture co-design  
+Examples: cell phones: ARM cores; GPUs   
+Bioinformatics: doing dynamical programming 37x speedup, 26,000x efficiency
+
+#### Design
+
+**Design by cost: Arithmetic is free (particularly low-precision); Memory is expensive; Communication is prohibitively expensive**  
+Local SRAM (KB); On-chip SRAM (MB); LPDDR DRAM(GB)  
+Algorithm changes  
+Darwin accelerators from Graphmap: Filtratio, Alignment  
+The first step needs read memory and hard to improve  
+Reduce the accuracy of the first step and compensating by the second step, which can be accelerated   
+Parallelize; Specialized memory for D-soft bin updates   
+GACT Alignment   
+On-chip memory D-SOFT  
+Cost has a time factor  
+Hardware of special data sturcture: static sparse weights; trained quantization   
+EIE hardware  
+
+Simple parallelism often beats a "better" algorithm  
+Accelerate the whole problem  
+Keep generality where possible   
+Platform for acceleration  
+GPU: high-bandwidth, hierachical memory system; effeicient low-precision computation 
+
+#### Summary
+
+As the speed of CPU gradually stops to increase, task-specific hardware design becomes increaingly important to improve the computational power. Based on analysis of time and energy cost of the computing process, domain-specific hardware can be designed to improve our computational abality significantly. 
