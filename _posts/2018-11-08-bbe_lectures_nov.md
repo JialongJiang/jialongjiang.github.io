@@ -49,3 +49,34 @@ RNN reconstruct the circuit
 Population processing: mixed selectivity; dynamic population code  
 
 Many information can be obtained by recording neural activity while performing tasks. Then these signal can be classified and processed with different conditions. However, actually only a small portion of neurons were recorded from the experiment limitation (possiblely less than 1%). Then the large amount of information retrieved from the small population seems amazing. This property is still under debate. 
+
+## On the Rational Boundedness of Cognitive Control
+
+### Jonathan Cohen, Princeton	11/08/2018
+
+#### Introduction 
+
+Control, repress some movement: Example. scratches; only in human   
+Parallel tasks  
+Control theory; cybernetics; TOKE model  
+Congnitive psychological tradition; qualititive description; limited capacity  
+Rescent formalism: expected value; rational meta reasoning; cost-benefit analysis  
+Why the capacity is limited? Energy? Structure?   
+Multitask: crosstalk; interference  
+How do make parallelize and scale with network size   
+
+#### Models
+
+Control over different channels; optimal strategy when nodes have overlap  
+Graph with shared representation radically restricts independent parallelism (almost exponential decay)   
+Why shared representation: learn faster; generalization  
+Color name task: shared representations  
+Network representation of multiple tasks  
+Single task vs. Multi task leanring: the learning try to capture more dominate representation  
+Interactive vs. independent parallelism 
+
+#### Summary
+
+The speaker propose that the difficulty of doing parallel tasks mainly come from the shared representation, which can cause interference. The shared representation come from the basic learning process. The network choose shared representation to capture the dominant features and improve the abality to generalize. However, this causes the network cannot make paraelleize the tasks sharing the representation. When trained to do multiple tasks together, tensor product representation is acquired rather than the shared one as before. 
+
+Comments: what is the trade-off relation between the preformance over multiple tasks and the number of representation allowed?
