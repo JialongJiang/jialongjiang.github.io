@@ -1,6 +1,6 @@
 ---
 title: 'Caltech BBE Lectures Nov'
-date: 2018-11-08
+date: 2018-11-12
 permalink: /posts/2018/11/bbe_lectures_nov/
 tags:
   - notes
@@ -80,3 +80,36 @@ Interactive vs. independent parallelism
 The speaker propose that the difficulty of doing parallel tasks mainly come from the shared representation, which can cause interference. The shared representation come from the basic learning process. The network choose shared representation to capture the dominant features and improve the abality to generalize. However, this causes the network cannot make paraelleize the tasks sharing the representation. When trained to do multiple tasks together, tensor product representation is acquired rather than the shared one as before. 
 
 Comments: what is the trade-off relation between the preformance over multiple tasks and the number of representation allowed?
+
+## Emergent Elasticity in the Neuro Code for Space
+
+### Surya Ganguli, Stanford	11/12/2018
+
+#### Introduction
+
+How to know the position and establish a map  
+Different cell types: border, speed, grid, head direction  
+Extrection of spatial position from periphery: landmark and velocity 
+
+#### Results
+
+Consistency of landmark activation with regard to paths
+
+Does error accumulate  
+Conditioned on last border touch, the error grows, while conditioned on other point doesn't  
+Firing field expansion; firing field drift    
+Experiment of homogeneousity showed firing field drift 
+
+1D attactor model: circular neuron chain, local excitation, long-range inhibition; localized activation wave packets  
+East/west velocity cells  
+Landmark cell: pinning phase; learn average by Hebbian learning   
+2D landmark cells  
+
+Topological defects of landscape   
+VR test of differrent gain rate of distance   
+Attractor-landmark model: the phase advance and the pinning effect of landmark should agree   
+Weak change: phase shift; strong change: remapping and rescaling 
+
+#### Summary
+
+The identification of self-position requires both the information of motion and landmark. Self-motion acts like a path-integration, while landmarks help to celebrate. This mechanism is confirmed by the perturbation experiment. Mild discrepancy makes a phase shift, and large difference with cause a remapping. This effect may not be restricted to the model proposed by the author. Also, the physical entity of such a circular wave has not been identified. 
