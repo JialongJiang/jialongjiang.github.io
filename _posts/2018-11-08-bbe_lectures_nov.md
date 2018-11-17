@@ -1,6 +1,6 @@
 ---
 title: 'Caltech BBE Lectures Nov'
-date: 2018-11-12
+date: 2018-11-08
 permalink: /posts/2018/11/bbe_lectures_nov/
 tags:
   - notes
@@ -113,3 +113,41 @@ Weak change: phase shift; strong change: remapping and rescaling
 #### Summary
 
 The identification of self-position requires both the information of motion and landmark. Self-motion acts like a path-integration, while landmarks help to celebrate. This mechanism is confirmed by the perturbation experiment. Mild discrepancy makes a phase shift, and large difference with cause a remapping. This effect may not be restricted to the model proposed by the author. Also, the physical entity of such a circular wave has not been identified. 
+
+## Architechture, Design, and Tradeoffs in Biomolecular Feedback Systems
+
+### Noah Olsman, thesis defense, John Doyle group	11/16/2018
+
+#### Introduction
+
+Consider biological system as functional systems; architechtural thinking; funtional modules; abstract away details under given constraints  
+
+#### Systems biology
+
+sensory systems: sensitive responses; broad range; photon detection and adaptation   
+Tradeoff between sensitive and broad; logarithmic sensing; contrast  
+Chemotaxis; osillating stimuli with different magnitude, same response; cell-cell signaling; vision   
+Logarithmic sensing by IFF & NIF (nonlinear integral feedforward)  
+Or with log sensor: allosteric regulation  
+MWC model; log sensing in the sensitive region   
+Free energy tuning response range  
+Example: hemoglobin 
+
+#### Synthetic Biology 
+
+Robust performance; robust perfect adaption   
+Sequestration feedback system [Cell Systems, 2016]  
+Stable states; control dynamics stabilities  
+Stable if production is slower than degradation  
+Performance metric: overshoot, noise, response time, error  
+Sensitivity function: error / reference with different frequency; Bodes's integral theorem, trade-off under different frequency  
+Fragility and speed  
+Estimation of the largest sensitivity; controller degradation reduces fragility but introduces error  
+Waterbed effect; reduce error, inefficiency  
+Design of syntheic bacterial growth control circuit; quorom sensing  
+population control; long-term osillation, first saturation  
+Fast sequestration can be ignored  
+
+#### Summary 
+
+The control theory can help our understanding of biological circuits, and design new circurits with desired functions. The rich phenomena in biology can also motivate theorical discoveries. 

@@ -1,6 +1,6 @@
 ---
 title: 'Caltech CMS Lectures Nov'
-date: 2018-11-07
+date: 2018-11-02
 permalink: /posts/2018/11/cms_lectures_nov/
 tags:
   - notes
@@ -209,3 +209,30 @@ GPU: high-bandwidth, hierachical memory system; effeicient low-precision computa
 #### Summary
 
 As the speed of CPU gradually stops to increase, task-specific hardware design becomes increaingly important to improve the computational power. Based on analysis of time and energy cost of the computing process, domain-specific hardware can be designed to improve our computational abality significantly. 
+
+## Machine Learning: From Genetics to Gene Editing to Protein Optimization 
+
+### Jennifer Listgarten, UCB	11/14/2018
+
+#### Introduction 
+
+Molecular biology: less data cost, more data  
+Statistical genetics; gene editing; rational protein engineering   
+Hidden confounding factors 
+
+#### Protein engineering
+
+Predict property from DNA sequence   
+Stochastic oracle: trained from sequence to property; reverse: given specific properties to predicted sequence   
+Oracle: $P(S|x)$, generative model $p(x|\theta^t)$ VAE, HMM  
+Iterative over the generative model to predict good sample   
+Entropy method, covariance adaptation   
+$\theta$  is in the expectation distirbution: maximize over a lower bound; MC estimates for rare events: cross-entropy methods; anneal a sequence of relaxations  
+Design by Adaptive Sampling (DbAS)  
+Noise-free, random oracle simulation  
+Conditional VAE  
+
+#### Summary
+
+The prediction model of properties can also be used to reverse engineering the samples. The generative model can be itatively updated with the prediction model. 
+
