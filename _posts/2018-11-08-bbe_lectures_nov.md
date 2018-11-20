@@ -151,3 +151,45 @@ Fast sequestration can be ignored
 #### Summary 
 
 The control theory can help our understanding of biological circuits, and design new circurits with desired functions. The rich phenomena in biology can also motivate theorical discoveries. 
+
+## The Bayesian Brain: From Predictive Coding to Decision Making
+
+### Rajesh Rao, UW Seattle	11/19/2018
+
+### Introcution
+
+Computational neuroscience; neurally-inspired AI; brain-computer interface  
+Cortical puzzle: diverse function, common organizatio principles; remarkable flexibility  
+Massive feedback and hierarchical structure; Abstruction of representation  
+Visual receptive field; Endstopping  
+Predictive coding; center activation and surrounding repression; response is the difference between the center and surrounding    
+Orientation contrast: why; Natural images statistics  
+Predictive coding theory of cortical function: prediction, error, update iternal representation  
+Implements Bayesian inference 
+
+#### Bayesian inference
+
+Probabilistic models of the brain   
+Learn a generative model to estimate the proability distribution  
+VR mouse fun landmarks; audio recognition;  
+Does predictive coding have a future; Predictive processing: a conical cortical computation  
+Inference of probabilistic beliefs: both the nean and variance   
+Predictive coding to actions, rewards, and decision making; indirected observation of the world  
+
+#### POMDPs
+
+Partially observable Markov decision processes (POMDPs): world action agent reward / observation  
+Agent: belief, policy, value function. Maximize the expected future reward; learn from the beliefs  
+Input: belief state; output: value of belief state; Train by temporal difference error (TD)   
+Random dots motion task; cortical response neuron recording; belief; collapsing decision boundary  
+Effect of changing prior probability; reward prediction error: hard trial have higher reward prediction error, but lower on error trials  
+Confidence of decision making; social decisions in group decision making task   
+
+#### Summary
+
+Bayesian approach offers nomative models for perception, action, reward optimization, and decision making  
+Neocortex modeled as a Bayesian estimator that maintaines a probabilistic internal nodel of the world  
+The basal ganglia hypothesized to learn values and policies for cortical beliefs  
+Bayesian models provide functional explanations  
+
+Bayesian inference is a fundamental rule for constructing the understanding the external world. Various experiments have shown that the brain actively explores the Bayesian rule, and both the mean and uncertainty play roles in the decision process. However, it is still uncler whether brain implement the Bayesian inference explicitly or is using other similar approaches. 
