@@ -188,8 +188,37 @@ Confidence of decision making; social decisions in group decision making task
 #### Summary
 
 Bayesian approach offers nomative models for perception, action, reward optimization, and decision making  
-Neocortex modeled as a Bayesian estimator that maintaines a probabilistic internal nodel of the world  
+Neocortex modeled as a Bayesian estimator that maintains a probabilistic internal model of the world  
 The basal ganglia hypothesized to learn values and policies for cortical beliefs  
 Bayesian models provide functional explanations  
 
 Bayesian inference is a fundamental rule for constructing the understanding the external world. Various experiments have shown that the brain actively explores the Bayesian rule, and both the mean and uncertainty play roles in the decision process. However, it is still uncler whether brain implement the Bayesian inference explicitly or is using other similar approaches. 
+
+## Bidirectional Brain-Computer Interfaces for Restoration and Augmentation of Brain Function
+
+### Rajesh Rao, UW Seattle	11/20/2018
+
+Sorry I missed the introduction part...
+
+#### ECoG Signals
+
+ECoG phenomena; Imagined movements have similar activation as actual ones  
+Use imagery to control a cursor; how brain change during learning to control the cursor  
+BCI learning is similar to motor skill learning    
+ECoG stimulation for sensory feedback; closed-loop control 
+
+#### Non-invasive BCIs
+
+EEG: noisy, correlation with brain activity  
+Beta wave, visually evoked potential (P300)  
+Control robots; motor imagery to navigate virutal world   
+Brain-to-brain interface  
+BrainNet: bollabrative problem solving by networks of brains  
+
+#### Summary
+
+Applications: medical; non-medical   
+Ethical issues: healthy and safety; legal issues; security and pravicy; social impact   
+
+Brain-machine interface provided a fancinating possibliity of understanding neuron fanctons and design engineering systems. 
+
