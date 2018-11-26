@@ -236,3 +236,37 @@ Conditional VAE
 
 The prediction model of properties can also be used to reverse engineering the samples. The generative model can be itatively updated with the prediction model. 
 
+## Network Centrality as Statistical Inference in Large Networks
+
+### Chee Wei Tan, City University of Hong Kong	11/26/2018
+
+#### Introduction 
+
+The original source of a spreading process  
+Fast dynamical process; network topology  
+Toy example: the central is the source   
+Formulation: initial all good; Susceptible-Infectious (SI) spreading model; each vertex equally likely; each time one infection   
+Spreading order to probability; optimization on the MLE; G is a degree regular infinite tree
+
+#### Approaches
+
+Spreading order is constrained by the network topology; probability is the same for all order given the central; just count all ways of spreading; solve by message passing; exponential complexity   
+For tree, centroid of graph; $G$ is a finite graph, different orders have different probability; previous results not hold  
+Example of a line graph; small vertex infected, the optimal tends to be the origin  
+New method  
+
+#### Introduction 
+
+Smart grid; power outage; cascade failing; defend on certain vertices   
+Minimize the average number of failure of nodes; quadratic expression of components; number of connected components  
+Message passing to compute the centroid  
+Only one protection: centroid is the solution; more protection centroid decomposition dynamical programming 
+
+#### Summary 
+
+Network centrality; optimization over statistical problems; reverse engineering  
+Reverse: given centrality, what problem does it implicitly solve  
+Forward: given inference, how to solve the optimization    
+How to combine the approaches from first principle and from data 
+
+There are many problems of network statistical inference are related to the property of "center". These problems are related to the established results in the graph theory, and also make new interpretations of them. 
