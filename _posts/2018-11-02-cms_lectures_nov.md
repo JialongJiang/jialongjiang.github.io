@@ -325,18 +325,31 @@ Connection-based ISOMAP: parallel transport to get geodesic distance; Christoff 
 Intrinsic neighborhoods to estimate tangent spaces; define matric connection between tangent spaces; rotation of a tangent space; evaluate geodesic distances; Cartan's development (unfold path in tangent space)  
 $k$-NN graph; small $k \sim 4d$ to avoid shortcutting; Euclidean distance as edge weight; define intrinsic neighborhoods: pick $K$ NN on the graph; compute the orthonormal basis on tangent space ($d$ unit vectors through SVD)  
 Discrete Levi-Civita connection; for each 
-$$ Rij = argmin R in O(d) ||TJ-TiR||_F^2 $$
+
+$$
+R_{ij} = \underset{R \in O(d)}{\mathrm{argmin}} ||T_j - T_iR||_F^2
+$$
+
 to unfold graph paths; $x_i \to x_j \to x_k$; compute the projection on tangent space
-$$ y_j = y_i + T_i (x_j - x_i); y_k = y_j + R_{ij} T_J (x_k - x_i) $$
-geodesic curvatures should be nearly preserved; final distance is $y_n - y_i$; cancel the zigzag and round the hole  
+
+$$
+y_j = y_i + T_i (x_j - x_i); \quad y_k = y_j + R_{ij} T_j (x_k - x_i)
+$$
+
+geodesic curvatures should be nearly preserved; final distance is $y_n - y_i$; cancel the zigzag and round the hole; holes in the manifold can be dealt with as the final distance is the distance in the tangent space  
 Implementation: similar as Dijkstra's  
-Examples; embedding 3d toros to high dimensions; photo with different light condition; letters with rotation and scaling  
+Examples; embedding 3d toros to high dimensions; photo with different light condition; letters with rotation and scaling    
 Landmark-PTU: $O(\ell^3)$; first embeds the $\ell$ landmarks; robust to irruularty  
 
 #### Spectral affine-kernel embeddings
 
-Large noise: use PTU; 
+He just skipped this part!  
+Large noise: use PTU
 
 #### Summary
 
 Geometry processing in high & low dimensions; intrinsic treatment of high-dimensional data; deferential geometry to help
+
+Real high dimensional data always have low-dimensional patterns. Previous method to extract these patterns are vunerable to noise and undersampling. In this work the low dimensional manifold are approximated by a set of tangent space, and methods from differential geometry can relief the problem. This method is powerful in its own mathematical set up. However, I'm still wonder if the low dimensiaonal manifold is what we need in real problems. In general this might be true as the features are always low-dimensional, but are they good enough to make the notion of manifold explicit in that?
+
+【讲座后去聊天，他问我的名字是什么意思，并说自己在学习中文。“Chinese is difficult. I have to be careful to not mess up word into bad ones. Once I said "好睡" instand of "睡好", and people was like [捂脸]+[滑稽].”
