@@ -270,3 +270,73 @@ Forward: given inference, how to solve the optimization
 How to combine the approaches from first principle and from data 
 
 There are many problems of network statistical inference are related to the property of "center". These problems are related to the established results in the graph theory, and also make new interpretations of them. 
+
+## Active Sensing for Quickest Event Detection in Networks
+
+### Ali Tajer, Rensselaer Polytechnic Institute	11/27/2018
+
+#### Introduction 
+
+Network anomaly detection (outliers); corruption to be cleared up; rare but significant events  
+Spectrum sensing; outage detection  
+Bus power grid outage; surveillance systems; change of correlation sturcture; detecting and localizing  
+Gaussian Markov field; normal $H_0$, abnomal $H_1$  
+Sequential sampling; minimal number of samples to discern the model; sequential detection; sequential design of experiments; active (controlled) sensing  
+Non-sequential: pre-specified sample number; sequential: decision of stopping time by data   
+$$ min E(r) s.t. P(\delta \neq 1) \leq \alpha $$  
+Improvement on sample size  
+Optimal: ratio bound with threshold   
+$$  E(stopping time| H0) = - B / I_0  I_0 KL divergence $$  
+
+#### Sequential design
+
+Different experiments will give different relative information   
+If  trival case  
+Chernoff's vision; independence not hold; Chernoff not optimal   
+Questions: what is the optimal stopping time; which RB should be sampled; what is terminal decision rule   
+Quickest search for one node; observation, exploration, detection; Bayesian integrated cost  
+Decision rules: compare the cost of the three choices; dynamical programming   
+
+#### Generalization to netwroks
+
+Chernoff rule  
+Links the action over time; not only the current return   
+Optimal but naive; number of sequences explode exponentially 
+
+Localizing line outages; compare the results with compressive sensing; restricting the searching sequence by network structure; 
+
+I'll spend more time to sort this up. 
+
+## Dimensionality Reduction via Geometry Processing
+
+### Mathieu Desbrun, Caltech 11/28/2018
+
+#### Introduction
+
+High dimensional dataset; pointsets in high dimensions; geometry: sample a manifold with small dimensions; example: faces images in different angles  
+Mapping the data; Euclidean embedding in low dimension in a "most isometric" way; intrinsic distance; geodesic (ISOMAP) or local positioning (L, LLE, HLLE, MLLE, LSTA); PCA  
+Brittleness of NLDR; cannot handle planar case; developable surfaces; irregular sampling, and noise; geometry in graphics
+
+#### Parallel transport unfolding 
+
+ISOMAP: preserving geodesic distances; construct $k$-NN graph; locality sensitive hashing data structure; manifold skeleton; edges are small geodesic paths; Dijkstra's algorithm to find all geodesic distance; MDS to find embedding, keep top $d$ eigenvectors  
+Intrinsic distances; not linear precise; partial sampling makes distance imprecise; only for geodesically-convex domains (no hole); $k$ hard to pick to avoid "shortcuts"; $O(n^3)$ complexity by dense Gram matrix; "landmark" partial sampling is not robust  
+Connection-based ISOMAP: parallel transport to get geodesic distance; Christoff symbols; the tangent of a geodesic is parallel-transported along it  
+Intrinsic neighborhoods to estimate tangent spaces; define matric connection between tangent spaces; rotation of a tangent space; evaluate geodesic distances; Cartan's development (unfold path in tangent space)  
+$k$-NN graph; small $k \sim 4d$ to avoid shortcutting; Euclidean distance as edge weight; define intrinsic neighborhoods: pick $K$ NN on the graph; compute the orthonormal basis on tangent space ($d$ unit vectors through SVD)  
+Discrete Levi-Civita connection; for each 
+$$ Rij = argmin R in O(d) ||TJ-TiR||_F^2 $$
+to unfold graph paths; $x_i \to x_j \to x_k$; compute the projection on tangent space
+$$ y_j = y_i + T_i (x_j - x_i); y_k = y_j + R_{ij} T_J (x_k - x_i) $$
+geodesic curvatures should be nearly preserved; final distance is $y_n - y_i$; cancel the zigzag and round the hole  
+Implementation: similar as Dijkstra's  
+Examples; embedding 3d toros to high dimensions; photo with different light condition; letters with rotation and scaling  
+Landmark-PTU: $O(\ell^3)$; first embeds the $\ell$ landmarks; robust to irruularty  
+
+#### Spectral affine-kernel embeddings
+
+Large noise: use PTU; 
+
+#### Summary
+
+Geometry processing in high & low dimensions; intrinsic treatment of high-dimensional data; deferential geometry to help
