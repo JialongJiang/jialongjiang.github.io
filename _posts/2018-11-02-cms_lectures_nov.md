@@ -305,7 +305,7 @@ Optimal but naive; number of sequences explode exponentially
 
 Localizing line outages; compare the results with compressive sensing; restricting the searching sequence by network structure; 
 
-I'll spend more time to sort this up. 
+#### I'm reading the reference and will follow up this note later
 
 ## Dimensionality Reduction via Geometry Processing
 
@@ -353,3 +353,26 @@ Geometry processing in high & low dimensions; intrinsic treatment of high-dimens
 Real high dimensional data always have low-dimensional patterns. Previous method to extract these patterns are vunerable to noise and undersampling. In this work the low dimensional manifold are approximated by a set of tangent space, and methods from differential geometry can relief the problem. This method is powerful in its own mathematical set up. However, I'm still wonder if the low dimensiaonal manifold is what we need in real problems. In general this might be true as the features are always low-dimensional, but are they good enough to make the notion of manifold explicit in that?
 
 【讲座后去聊天，他问我的名字是什么意思，并说自己在学习中文。“Chinese is difficult. I have to be careful to not mess up word into bad ones. Once I said "好睡" instand of "睡好", and people was like [捂脸]+[滑稽].”
+
+## Learnability and Stochastic Choices
+
+### Pathikrit Basu, Caltech	11/30/2018
+
+#### Introduction
+
+Choice probabilities; stochastic choice model; analyst and agent  
+Prediction; counterfactual analysis; preference heterogeneity; problem of leaning choice probabilities; additive perturbed unity, multinomial logit; choice with consideration sets
+
+#### Framework
+
+Alternatives; characteristics; stochastic choice function; model : set of stochastic functions  
+Learning rule; quantify how good an estimate is by the distance; learnable: exists leaning rule so that the estimation is good enough with enough number of samples (sample complexity)   
+Empirical risk minimization; ERM principle; scoring rules; incentive compatibility; divergence function as difference of scoring function; log score; quadratic score, Pinkser's inequality; subgradient of convex functions  
+Theorem: the class has a uniform upper bound being Glivenko-Cantelli class, the the model is learnable with the divergence   
+Gilvenko-Cantelli class: finiteness of dimension of the function   
+Sample complexity bound 
+
+#### Summary
+
+This talk is sort of confusing as the speaker seems to solve the problem of machine learning in a very general sense. Assumptions related to the specific problems are hardly mentioned. The same concerns were mentioned several times during the talk. But there are still some concepts that might be helpful for the general understanding of statistical learning problem. 
+
