@@ -65,3 +65,40 @@ Open problems: average case hardness; algorithms; revealed belief model; Gaussia
 #### Summary
 
 For the problem of Bayesian inference on a graph, the author try to construct special case where the computational complexity is hard. This type of model is widely used in economics and social science. However, the construct of the result might be arbitrary, and it might be more insightful to consider the computational complexity of the average case. 
+
+
+
+#### Introduction
+
+Estimation after parameter selection; estimation after model selection  
+Not data selection; not testing after selection; not for specific model  
+Observation; parameter selection; estimation; cognitive radio communication; medical treatments: several treatment is available, selection bias; Gaussian distribution: estimation $\theta+w$ with noise, select the tail, the estimator is biased , Tweeie's formula  
+
+#### Model
+
+Data generating model; selection rule; estimation  
+Naive selection: coin flipping; coin related to parameters, non-Bayesian estimation, nuances parameter; population model with treatment  
+Non-Bayesian estimation; Fisher; Lehmann; cost function: MSE; minimum variance unbiased estimation; MSE lower bound; Lehmann-unbiasedness: regard to to cost function used; the closest in the distribution family  
+Design cost function: only the error of selected parameters, selection rule predetermined; post selection unbiasedness (PSSE); uniformly distributed; two different parameters; UV estimator Robbins (1988)  
+$\Phi$-Cramer-Rao bound; post-selection Fisher information; decoupled parameters; loss of information
+$$
+J_m(\theta,\Psi)=J|_{\Psi=m}+\nabla^2_\theta\log P(\Psi=m)
+$$
+PSML estimator; add penalized term; \Phi-efficiency; not unique (as only relevant to selected parameter's); if exists, achieves; low-complexity; decompose into two terms; information  
+Hard to compute; stochastic approximation, no need for selection rule; second-best, selected and just not selected  
+Binary exponential model; linear correlated Gaussian model; multiple-Gaussian model  
+Two-stage model; sample from full population model; half-data for selection and half for estimation, not using all data   
+Cognitive radio spectrum after channel kNN selection; multi-armed bandit; data on unselected arms; take data from unselected channels
+
+#### Model selection 
+
+Number of sources; direction of arrival estimation; polynomial regression: number of required degree; sparse vector estimation, nonempty support  
+Selection model then do the estimation; MSSE; from bound of MSSE to MSE  
+Sparse vector estimation
+
+#### Summary 
+
+Non-Bayesian estimation after parameter selection; performance analysis: unbiased in Lehmann sense, Cramer-Rao bound for Lehmann-unbiased estimator; estimation: efficiency, lower-complexity methods; adaptive sampling: improve estimation by sampling on unselected parameters
+
+The selection after sampling will introduce biases into the estimation. The author propose to use the concept of Lehmann-unbiasedness to address the issue, and make new estimators. 
+
