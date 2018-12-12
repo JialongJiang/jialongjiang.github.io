@@ -113,9 +113,9 @@ Question: reduce data volume without losing important information
 
 #### Sketching
 
-Data matrix $n\times d$; $n$ much larger than $d$; batch optimization; combined batch; combined batch  
-Least square prediction: design $S$ $m\times d$ sketching matrix (e.g. i.i.d. $+-1$); FFT on random diagonal matrix   
-If  $m \geq c_0 \mathrm{rank}*(A)/\epsilon$ effective rank  
+Data matrix $n\times d$ ; $n$ much larger than $d$; batch optimization; combined batch; combined batch  
+Least square prediction: design $S$ $m\times d$ sketching matrix (e.g. i.i.d. $\pm 1$); FFT on random diagonal matrix   
+If  $m \geq c_0 \mathrm{rank}^*(A)/\epsilon$ effective rank  
 How good is the approximation in the sense of solution $x$; lower bound on estimator; information-theoretically impossible  
 Optimal algorithm with complexity $O(nd)$; estimation on small batch, compute the residue, second round use the residue as sketching; iterative sketching; optimal prediction in $\log(n/d)$ rounds   
 Generalized to arbitrary function; Newton method; affine invariant  
@@ -124,14 +124,14 @@ Logistic regression; with correlated data; Newton sketch behaves better; Linear 
 
 #### Distributed Optimization 
 
-ADMM: partition the data; introduce constraints $x_1=x_2$ with Lagrange multiplier; convergence; minimize communication; naive sampling statuaries  
-Randomized direction method of multipliers; DFT matrix with randomly perturbed rows; converge rate $C\log(1/\epsilon)$  
+ADMM: partition the data; introduce constraints $x_1=x_2​$ with Lagrange multiplier; convergence; minimize communication; naive sampling statuaries  
+Randomized direction method of multipliers; DFT matrix with randomly perturbed rows; converge rate $C\log(1/\epsilon)​$  
 Non-convex optimization; Gauss-Newton method; compute the Jacobian by back propagation  
 Streaming optimization; privacy; distributed and fault tolerant computing; 
 
 #### Summary 
 
-
+The method of sketching choose better projection direction to reduce the dimension of training data. Sketching basically adjust the projection by the residue, and the idea may have wider application.
 
 ## Inference with Covariate-Adaptive Randomization
 

@@ -1,23 +1,32 @@
+---
+title: 'Caltech BBE Lectures Dec'
+date: 2018-12-01
+permalink: /posts/2018/12/bbe_lectures_dec/
+tags:
+  - notes
+---
+
+December starts with the deep question of free will. I keep thinking on that but only to make myself suspecious to myself. 
+
 # Workshop for Decision Making and Free Will
 
-## Cortical-amygdala circulit
+## Cortical-Amygdala Circulit Projections Drive Reward Value Encoding and Retrieval
 
-## Introduction
+### Kate Wassum, UCLA
+
+#### Introduction
 
 Decision making; reason about future; decide reward value; from stimulus to outcome  
 Incentive value; reward pursuit; history value on the current situation; reward value encoding  
 
 #### Learning and retrieval of value
 
-Training: lever for sugar; learn sugar is more important when hungary
-
-Q: mouse know sugar is?
-
+Training: lever for sugar; learn sugar is more important when hungary  
 BLA glutamate activity  track reward value encoding; OFC support BLA for reward encoding  
 Knock down of the circuit prevent the learning of value; stimulating the circuit assign greater values to sugar; lateral OFC to BLA projection  
 Activation of the circuit also helps to retrieve the learned value   
 Learn the difference of sugar under different level of hungry  
-Lateal OFC: incentive value encoding; medial OFC inventive value retrieval  
+Lateral OFC: incentive value encoding; medial OFC inventive value retrieval  
 
 #### Learning of stimulus-reward relation 
 
@@ -53,15 +62,11 @@ Ultrasonic vocalization
 Female cues: MPO: mating; male cues: VMHvl: aggression  
 Cortex: electronic brain; amygdala/hypothalamus: hydraulic brain  
 Sexual inexperianced male mouse have the same neuron population they diffantiate after sexual experience  
-Female have differetn population to agression to mating 
-
-#### Summary 
+Female have different population to agression to mating 
 
 ## Freewill, Determinism and Survival
 
 ### Dean Mobbs, Caltech
-
-#### Introduction
 
 Rational agents to choose; decision theory; survival theory  
 Quick and deterministic & slow and strategic; different circuit; spatiotemporal dynamics of danger  
@@ -72,13 +77,11 @@ Thigmotaxis and axiety ; maze with caged or not caged predator
 The econmics of flee; cost not flee and cost of not flee; different attack speed. subject choose when to flee  
 Fast attack: reactive fear; Slow attack: cognitive fear; trait anxiety and flight distance  
 Fear is a dynamic process; distal or slow danger: proximal attack   
-Reduce the risk of predation； freewill to choose between options to think out of predators 
+Reduce the risk of predation; freewill to choose between options to think out of predators 
 
 ## Model-based and Model-free Reinforcement Learning in the Brain
 
 ### John O'Doherly, Caltech
-
-#### Introduction 
 
 Goals vs habits; goal-directed control; habitual control; rewards based the past with the same context  
 How to learn model-free tasks; Markov decision task; reinforcement-learning model: expectation of reward learned on the prediction error; dopamine neurons activity similar to prediction errors   
@@ -94,19 +97,17 @@ Two different mechanisms for controling behavior; arbitration depends on their r
 
 ### Colin Camerer, Caltech
 
-#### Introduction
-
 Facts about limits on computation, willpower and self-interest are used to improve economic prediction; neuroeconomics: biological implementation  
 Hypothesized decision process; statistical behavioral fit; observed choices  
 Marginal costs and benefits matter; consequentialism: only net wealth matters; lost and gain asymmetry  
 Sunk cost; concorde fallacy; all-you-can-eat pizza; travel decision;  loss-aversion  
-Reference point goa;a in IronMan triathions 
+Reference point goa;a in IronMan triathlons 
 
-## 
+## Decision Making 
 
 ### Annie Duke
 
-equating the quality of a decision with the quality of the outcome  
+Equating the quality of a decision with the quality of the outcome  
 Poker: decision making with uncertainty over time; bet on particular future  
 Hear; believe; vet; after have a belief: seek out confirming evidence, discrediting contradicting evidence  
 Reduce bias; forming an intertional that roup supports resoning to be accurate rather thatn right; ignore short-term outcomes; deep exploration of counterfactual lines
@@ -114,8 +115,6 @@ Reduce bias; forming an intertional that roup supports resoning to be accurate r
 ## Free Will, Agency, and Psychological Explanation 
 
 ### Rosa Cao, Stanford
-
-#### Introduction 
 
 Determinism; does the future need to be open to be free; libertarians; too late to the show; brains decide before we know  
 Compatibilism; others; liberterialism; no free will  
@@ -127,8 +126,6 @@ Higher level causes real; epistemic uncertainty: indistinguishable microstates; 
 ## Free Will from a Physics Standpoint
 
 ### Anton Kapustin, Caltech
-
-#### Introduction
 
 Make choices not determined by prior causes or by divine intervention  
 Classical physics; completely deterministic;  Laplace's demon  
