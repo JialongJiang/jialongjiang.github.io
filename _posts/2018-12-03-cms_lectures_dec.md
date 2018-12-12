@@ -102,3 +102,54 @@ Non-Bayesian estimation after parameter selection; performance analysis: unbiase
 
 The selection after sampling will introduce biases into the estimation. The author propose to use the concept of Lehmann-unbiasedness to address the issue, and make new estimators. 
 
+## Randomized Algorithms for Convex and Non-Convex Optimization
+
+### Mert Pilanci, Stanford	12/06/2018
+
+#### Introduction
+
+Scale of data; deep learning; large scale; complex models  
+Question: reduce data volume without losing important information    
+
+#### Sketching
+
+Data matrix $n\times d$; $n$ much larger than $d$; batch optimization; combined batch; combined batch  
+Least square prediction: design $S$ $m\times d$ sketching matrix (e.g. i.i.d. $+-1$); FFT on random diagonal matrix   
+If  $m \geq c_0 \mathrm{rank}*(A)/\epsilon$ effective rank  
+How good is the approximation in the sense of solution $x$; lower bound on estimator; information-theoretically impossible  
+Optimal algorithm with complexity $O(nd)$; estimation on small batch, compute the residue, second round use the residue as sketching; iterative sketching; optimal prediction in $\log(n/d)$ rounds   
+Generalized to arbitrary function; Newton method; affine invariant  
+Newton sketch; affine invariant distribution; $C \log(1/\epsilon)$  
+Logistic regression; with correlated data; Newton sketch behaves better; Linear programming. interior point  method
+
+#### Distributed Optimization 
+
+ADMM: partition the data; introduce constraints $x_1=x_2$ with Lagrange multiplier; convergence; minimize communication; naive sampling statuaries  
+Randomized direction method of multipliers; DFT matrix with randomly perturbed rows; converge rate $C\log(1/\epsilon)$  
+Non-convex optimization; Gauss-Newton method; compute the Jacobian by back propagation  
+Streaming optimization; privacy; distributed and fault tolerant computing; 
+
+#### Summary 
+
+
+
+## Inference with Covariate-Adaptive Randomization
+
+### Azeem M. Shaikh, UChicago	12/11/2018
+
+#### Introduction 
+
+Random controlled trials; avoid imbalance in baseline covariance; stratified block randomization; implication for inference about average treatment effect; method for i.i.d. data is still valid, but not powerful  
+Outcome $Y$, indicator $A$, covariate $Z$; interested in if treatment have effect (different expectation)   
+
+#### Reuslts
+
+Two-sample t-test; permutation test within strata  
+Multiple treatment; matched pair  
+
+#### Summary
+
+I totally didn't follow what he was talking about. He was speaking so fast and the slides were with tiny font. The basic idea is, in the context of stratified samples, the estimator for homogenous samples still holds, but not optimal. There are some methods to improve the performance of the estimator. 
+
+
+
