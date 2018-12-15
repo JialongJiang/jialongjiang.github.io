@@ -151,5 +151,47 @@ Multiple treatment; matched pair
 
 I totally didn't follow what he was talking about. He was speaking so fast and the slides were with tiny font. The basic idea is, in the context of stratified samples, the estimator for homogenous samples still holds, but not optimal. There are some methods to improve the performance of the estimator. 
 
+## An Anisotropic Interaction Model for Simulating Fingerprints
 
+### Lisa Maria Kreusser, Cambridge	12/13/2018
 
+#### Introduction
+
+Fingerprints patterns; large data bases needed; how do the patterns develops  
+Collective behaviors; isotropic interaction model; interaction forces; short range repulsive, long-range attractive; radially symmetric, alignment along the distance vector; potential $\nabla W$  
+Microscopic model; associated continuum model; minimizing interaction energy; repulsive attractive radially symmetric potential  
+Fingerprint development stages; growth forces in epidermis and shrinkage of volar pad create compressive stress; rearrangement of Merkel cells from random into parallel along the lines of smallest compressive stresses; primary ridges are induced by the Merkel cell  
+
+#### Model
+
+Interacting cells; tensor field of stress; orthonormal vector field; $\chi$ for the skewness of forces; additional repulsion force $\chi \in [0, 1)$; stretching  
+Continuum limits of the model; reduction to specific spatially homogenous tensor field; equilibrium state of PDEs; existence of equilibria and stability   
+Realizations of randomly distributed initial data; infer the stress field based on fingerprint  
+
+#### Summary
+
+The author solves a model trying to understand the genesis of fingerprint. The intuition is, when the system has stretching forces, the homogenous interaction forces will create the linear pattern in the fingerprints. 
+
+## Spatial-Temporal Strategies of Ride-Sharing Platforms
+
+### Hongyao Ma, Harvard	12/14/2018
+
+#### Introduction
+
+Reliable & flexible; different price in different area; different price at different time; different destination  
+Model: network of place and time with links for ride; myopic decision rule; competitive equilibrium (CE)   
+Spatial-temporal pricing mechanism; announce a driver-pessimal CE plan; upon deviation happen, 
+Subgame perfect inventive compatible, welfare optimal, envy free, core-selecting, budget-balanced; computational efficient  
+
+#### Model
+
+Dispatch available drivers to pick-up or relocation; drivers decide choices; discrete time; location and distance; cost of trip; strategic drivers; impatient, price-taking rider; supply and demand known to platform  
+Optimal planning; minimum cost flow (MCP) problem; replica welfare gain  
+
+#### Summary
+
+With knowledge of supply and demand; driver-optimal reasoning; VCG reasoning  
+Uncertain in the demand/supply; empirical study; inefficiency due to strategic behavior  
+reliability in scheduled rides; bidding the penalty; charge the 2nd highest bid as penalty
+
+The author solved a model of total information arrangement of the ride-sharing dispatching problem. However the real case might be more complicated and more rich behavior. 
