@@ -65,3 +65,133 @@ Open problems: average case hardness; algorithms; revealed belief model; Gaussia
 #### Summary
 
 For the problem of Bayesian inference on a graph, the author try to construct special case where the computational complexity is hard. This type of model is widely used in economics and social science. However, the construct of the result might be arbitrary, and it might be more insightful to consider the computational complexity of the average case. 
+
+
+
+#### Introduction
+
+Estimation after parameter selection; estimation after model selection  
+Not data selection; not testing after selection; not for specific model  
+Observation; parameter selection; estimation; cognitive radio communication; medical treatments: several treatment is available, selection bias; Gaussian distribution: estimation $\theta+w$ with noise, select the tail, the estimator is biased , Tweeie's formula  
+
+#### Model
+
+Data generating model; selection rule; estimation  
+Naive selection: coin flipping; coin related to parameters, non-Bayesian estimation, nuances parameter; population model with treatment  
+Non-Bayesian estimation; Fisher; Lehmann; cost function: MSE; minimum variance unbiased estimation; MSE lower bound; Lehmann-unbiasedness: regard to to cost function used; the closest in the distribution family  
+Design cost function: only the error of selected parameters, selection rule predetermined; post selection unbiasedness (PSSE); uniformly distributed; two different parameters; UV estimator Robbins (1988)  
+$\Phi$-Cramer-Rao bound; post-selection Fisher information; decoupled parameters; loss of information
+$$
+J_m(\theta,\Psi)=J|_{\Psi=m}+\nabla^2_\theta\log P(\Psi=m)
+$$
+PSML estimator; add penalized term; \Phi-efficiency; not unique (as only relevant to selected parameter's); if exists, achieves; low-complexity; decompose into two terms; information  
+Hard to compute; stochastic approximation, no need for selection rule; second-best, selected and just not selected  
+Binary exponential model; linear correlated Gaussian model; multiple-Gaussian model  
+Two-stage model; sample from full population model; half-data for selection and half for estimation, not using all data   
+Cognitive radio spectrum after channel kNN selection; multi-armed bandit; data on unselected arms; take data from unselected channels
+
+#### Model selection 
+
+Number of sources; direction of arrival estimation; polynomial regression: number of required degree; sparse vector estimation, nonempty support  
+Selection model then do the estimation; MSSE; from bound of MSSE to MSE  
+Sparse vector estimation
+
+#### Summary 
+
+Non-Bayesian estimation after parameter selection; performance analysis: unbiased in Lehmann sense, Cramer-Rao bound for Lehmann-unbiased estimator; estimation: efficiency, lower-complexity methods; adaptive sampling: improve estimation by sampling on unselected parameters
+
+The selection after sampling will introduce biases into the estimation. The author propose to use the concept of Lehmann-unbiasedness to address the issue, and make new estimators. 
+
+## Randomized Algorithms for Convex and Non-Convex Optimization
+
+### Mert Pilanci, Stanford	12/06/2018
+
+#### Introduction
+
+Scale of data; deep learning; large scale; complex models  
+Question: reduce data volume without losing important information    
+
+#### Sketching
+
+Data matrix $n\times d$ ; $n$ much larger than $d$; batch optimization; combined batch; combined batch  
+Least square prediction: design $S$ $m\times d$ sketching matrix (e.g. i.i.d. $\pm 1$); FFT on random diagonal matrix   
+If  $m \geq c_0 \mathrm{rank}^*(A)/\epsilon$ effective rank  
+How good is the approximation in the sense of solution $x$; lower bound on estimator; information-theoretically impossible  
+Optimal algorithm with complexity $O(nd)$; estimation on small batch, compute the residue, second round use the residue as sketching; iterative sketching; optimal prediction in $\log(n/d)$ rounds   
+Generalized to arbitrary function; Newton method; affine invariant  
+Newton sketch; affine invariant distribution; $C \log(1/\epsilon)$  
+Logistic regression; with correlated data; Newton sketch behaves better; Linear programming. interior point  method
+
+#### Distributed Optimization 
+
+ADMM: partition the data; introduce constraints $x_1=x_2​$ with Lagrange multiplier; convergence; minimize communication; naive sampling statuaries  
+Randomized direction method of multipliers; DFT matrix with randomly perturbed rows; converge rate $C\log(1/\epsilon)​$  
+Non-convex optimization; Gauss-Newton method; compute the Jacobian by back propagation  
+Streaming optimization; privacy; distributed and fault tolerant computing; 
+
+#### Summary 
+
+The method of sketching choose better projection direction to reduce the dimension of training data. Sketching basically adjust the projection by the residue, and the idea may have wider application.
+
+## Inference with Covariate-Adaptive Randomization
+
+### Azeem M. Shaikh, UChicago	12/11/2018
+
+#### Introduction 
+
+Random controlled trials; avoid imbalance in baseline covariance; stratified block randomization; implication for inference about average treatment effect; method for i.i.d. data is still valid, but not powerful  
+Outcome $Y$, indicator $A$, covariate $Z$; interested in if treatment have effect (different expectation)   
+
+#### Reuslts
+
+Two-sample t-test; permutation test within strata  
+Multiple treatment; matched pair  
+
+#### Summary
+
+I totally didn't follow what he was talking about. He was speaking so fast and the slides were with tiny font. The basic idea is, in the context of stratified samples, the estimator for homogenous samples still holds, but not optimal. There are some methods to improve the performance of the estimator. 
+
+## An Anisotropic Interaction Model for Simulating Fingerprints
+
+### Lisa Maria Kreusser, Cambridge	12/13/2018
+
+#### Introduction
+
+Fingerprints patterns; large data bases needed; how do the patterns develops  
+Collective behaviors; isotropic interaction model; interaction forces; short range repulsive, long-range attractive; radially symmetric, alignment along the distance vector; potential $\nabla W$  
+Microscopic model; associated continuum model; minimizing interaction energy; repulsive attractive radially symmetric potential  
+Fingerprint development stages; growth forces in epidermis and shrinkage of volar pad create compressive stress; rearrangement of Merkel cells from random into parallel along the lines of smallest compressive stresses; primary ridges are induced by the Merkel cell  
+
+#### Model
+
+Interacting cells; tensor field of stress; orthonormal vector field; $\chi$ for the skewness of forces; additional repulsion force $\chi \in [0, 1)$; stretching  
+Continuum limits of the model; reduction to specific spatially homogenous tensor field; equilibrium state of PDEs; existence of equilibria and stability   
+Realizations of randomly distributed initial data; infer the stress field based on fingerprint  
+
+#### Summary
+
+The author solves a model trying to understand the genesis of fingerprint. The intuition is, when the system has stretching forces, the homogenous interaction forces will create the linear pattern in the fingerprints. 
+
+## Spatial-Temporal Strategies of Ride-Sharing Platforms
+
+### Hongyao Ma, Harvard	12/14/2018
+
+#### Introduction
+
+Reliable & flexible; different price in different area; different price at different time; different destination  
+Model: network of place and time with links for ride; myopic decision rule; competitive equilibrium (CE)   
+Spatial-temporal pricing mechanism; announce a driver-pessimal CE plan; upon deviation happen, 
+Subgame perfect inventive compatible, welfare optimal, envy free, core-selecting, budget-balanced; computational efficient  
+
+#### Model
+
+Dispatch available drivers to pick-up or relocation; drivers decide choices; discrete time; location and distance; cost of trip; strategic drivers; impatient, price-taking rider; supply and demand known to platform  
+Optimal planning; minimum cost flow (MCP) problem; replica welfare gain  
+
+#### Summary
+
+With knowledge of supply and demand; driver-optimal reasoning; VCG reasoning  
+Uncertain in the demand/supply; empirical study; inefficiency due to strategic behavior  
+reliability in scheduled rides; bidding the penalty; charge the 2nd highest bid as penalty
+
+The author solved a model of total information arrangement of the ride-sharing dispatching problem. However the real case might be more complicated and more rich behavior. 
