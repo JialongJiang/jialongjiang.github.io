@@ -21,4 +21,5 @@ Experience
 
 # Teaching
 
-* Freshman Seminar of Yuanpei College, Peking University, 2015 fall
+* Freshman Seminar of Yuanpei College, Peking University, Fall 2015-2016
+* Bi/BE/CS 183, Introduction to Computational Biology and Bioinformatics, Caltech, Winter 2018-2019 
