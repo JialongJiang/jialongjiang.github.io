@@ -7,7 +7,7 @@
 
 # Site Settings
 locale                   : "en-US"
-title                    : "Life with Random Walks"
+title                    : "Information, Physics and Computation"
 title_separator          : "-"
 name                     : &name "Jialong Jiang"
 description              : &description "Graduate student at Caltech"
