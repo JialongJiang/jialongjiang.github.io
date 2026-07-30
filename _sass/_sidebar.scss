@@ -217,6 +217,7 @@
 
   li {
     white-space: nowrap;
+    font-size: 0.875em;
   }
 
   a {
@@ -226,7 +227,7 @@
     padding-top: 2px;
     padding-bottom: 2px;
     color: inherit;
-    font-size: $type-size-5;
+    font-size: 1em;
     text-decoration: none;
 
     &:hover {

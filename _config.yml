@@ -7,10 +7,10 @@
 
 # Site Settings
 locale                   : "en-US"
-title                    : "Physics and Inference of Complex Systems"
+title                    : "Inference and control of regulatory networks"
 title_separator          : "-"
 name                     : &name "Jialong Jiang"
-description              : &description "Graduate student at Caltech"
+description              : &description "Fellow in Physics and Biology"
 url                      : https://jialongjiang.com # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
 repository               : "jialongjiang/jialongjiang.github.io"
@@ -80,12 +80,12 @@ analytics:
 # Site Author
 author:
   name             : "Jialong Jiang"
-  avatar           : "profile.jpg"
-  bio              : "Graduate student at Caltech, Computational & Systems Biology"
-  location         : "Pasadena, CA"
-  employer         :
-  googlescholar    : 
-  email            : jiangjl_AT_caltech_DOT_edu
+  avatar           : "Jialong_Jiang_Rockefeller.jpg"
+  bio              : "Fellow in Physics and Biology, Rockefeller University"
+  location         : "New York, NY"
+  employer         : 
+  googlescholar    : https://scholar.google.com/citations?user=fm4ONDUAAAAJ
+  email            : jiangjl_AT_rockefeller_DOT_edu
   uri              :
   bitbucket        :
   codepen          :
@@ -98,8 +98,8 @@ author:
   keybase          :
   instagram        :
   lastfm           :
-  linkedin         :
-  orcid            : #"http://orcid.org/yourorcidurl"
+  linkedin         : "jialong-jiang-155811164"
+  orcid            : https://orcid.org/0000-0001-8560-8397
   pinterest        :
   soundcloud       :
   stackoverflow    : # http://stackoverflow.com/users/123456/username

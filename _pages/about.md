@@ -8,13 +8,14 @@ redirect_from:
   - /about.html
 ---
 
-I'm currently a graduate student at California Institute of Technology. I am interested in understanding the mariad of phenomena in living systems by quantitive approaches. The following topics are especially exciting to me:
+I am currently an Independent Fellow at the [Center for Studies in Physics and Biology](https://www.rockefeller.edu/research/interdisciplinary-centers/center-studies-physics-biology/) at The Rockefeller University. My research asks how gene regulatory networks generate, stabilize, and redirect cell states. I combine machine learning, statistical physics, and single-cell genomics to build models that are both mechanistically interpretable and predictive.
 
-* Living systems stay in non-equilibrium regiem by actively extracting energy from environment.  What makes life so special as a physical system compared with its inorganic environment?
-* Biological systems operate under large thermal fluctuations and populational variance. How do them control or even utilize these noise under the limited facilities available?
-* As the development of high-throughput experimental methods, such as imaging, single-cell sequencing, large quantities of experimental data contain abundent information. How to build interpretable statistical learning models to extract the information?
-* Complex networks play important roles in many aspects of life, and enormous functions arise from the complexity, like learning, memory, etc. How are these functions achieved and what are the key features to implement them?
+I am especially interested in the following questions:
 
-I got my B.S. in Integrated Science at Peking University, where I was first exposed to scientific research, and the fancinating area of understanding living systems with quantitative reasonings. Even though I primarily received physics training in my undergrad years, I turn to more mathematical approaches since I came here. Physics models are fun, but sometimes the model selection trap is frustrating. Therefore I'd like to know what can we deduce from more abstract and high-level assumptions, and also how to use them to extract information from experimental data. 
+* **How do regulatory networks keep cell states stable yet adaptable?** Cells must preserve essential functions despite genetic and environmental disturbances, while remaining responsive to signals that trigger changes in cell fate. I study how distributed interactions among regulatory programs create this balance between robustness and flexibility.
+* **How can perturbations expose regulatory interactions that are hidden in unperturbed data?** Observational datasets often sample only a limited region of the cell-state landscape, leaving many regulatory relationships difficult to identify. Genetic, chemical, and signaling perturbations drive cells into otherwise inaccessible states and reveal how the underlying network reorganizes.
+* **How can generative models guide experiments and interventions to steer cell populations?** A useful model should not only explain the states already observed, but also predict responses to new perturbations and combinations. I develop interpretable models that help select informative experiments and identify efficient routes toward desired cellular states.
 
-I play guitar fingerstyle in my part time. I enjoy the variety of techniques in fingerstyle to make different timbres, and also the chord of six strings.
+I earned my Ph.D. under the supervision Prof. Matt Thomson at Caltech in Systems Biology with minor in Applied and Computational Mathematics. During my Ph.D., I developed [D-SPIN](https://doi.org/10.1016/j.cell.2026.04.028), a framework for learning regulatory network models from large-scale single-cell perturbation data. D-SPIN treats the regulatory network as an energy landscape of possible cell states and perturbations as forces that tilt the landscape. By integrating responses across thousands of genetic, chemical, and signaling conditions, it transforms descriptive single-cell atlases into models of the regulatory logic that produces the observed cell states.
+
+I got my B.S. in Integrated Science from Yuanpei College at Peking University. Outside research, I enjoy playing guitar, learning new musical instruments, and exploring the city.
