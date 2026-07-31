@@ -79,6 +79,99 @@
 
 
 /*
+   Publication cards
+   ========================================================================== */
+
+.publication-list {
+  margin-top: 1.5em;
+}
+
+.publication-card {
+  display: grid;
+  grid-template-columns: 250px minmax(0, 1fr);
+  gap: clamp(1.15em, 2.25vw, 1.75em);
+  align-items: start;
+  padding: 1.5em 0 2em;
+  border-top: 1px solid $border-color;
+
+  &:first-child {
+    padding-top: 0;
+    border-top: 0;
+  }
+}
+
+.publication-card__figure {
+  display: block;
+  overflow: hidden;
+  border: 1px solid $border-color;
+  border-radius: $border-radius;
+  background: $lighter-gray;
+
+  img {
+    display: block;
+    width: 100%;
+    height: auto;
+    transition: transform 0.25s ease;
+  }
+
+  &:hover img,
+  &:focus img {
+    transform: scale(1.02);
+  }
+}
+
+.publication-card__body {
+  min-width: 0;
+}
+
+.publication-card__title {
+  margin: 0 0 0.7em;
+  font-family: $header-font-family;
+  font-size: 1.1em;
+  line-height: 1.35;
+
+  a {
+    color: $text-color;
+    text-decoration: none;
+
+    &:hover,
+    &:focus {
+      color: $link-color-hover;
+      text-decoration: underline;
+    }
+  }
+}
+
+.publication-card__authors {
+  margin: 0 0 0.65em;
+  font-size: 0.88em;
+  line-height: 1.5;
+}
+
+.publication-card__reference {
+  margin: 0;
+  color: $gray;
+  font-size: 0.88em;
+  line-height: 1.5;
+
+  cite {
+    color: $text-color;
+  }
+}
+
+@include breakpoint(max-width $small) {
+  .publication-card {
+    grid-template-columns: 1fr;
+    gap: 1.15em;
+  }
+
+  .publication-card__figure {
+    max-width: 250px;
+  }
+}
+
+
+/*
    List view
    ========================================================================== */
 

@@ -1,0 +1,42 @@
+{% include base_path %}
+
+{% assign publication_link = post.link | default: post.paperurl %}
+{% unless publication_link %}
+  {% capture publication_link %}{{ base_path }}{{ post.url }}{% endcapture %}
+{% endunless %}
+
+<article class="publication-card" itemscope itemtype="https://schema.org/ScholarlyArticle">
+  {% if post.image %}
+    <a class="publication-card__figure" href="{{ publication_link }}" aria-label="Read {{ post.title }}">
+      <img
+        src="{% if post.image contains '://' %}{{ post.image }}{% else %}{{ post.image | prepend: base_path }}{% endif %}"
+        alt="{{ post.image_alt | default: post.title }}"
+        loading="lazy"
+        itemprop="image">
+    </a>
+  {% endif %}
+
+  <div class="publication-card__body">
+    <h2 class="publication-card__title" itemprop="headline">
+      <a href="{{ publication_link }}">{{ post.title }}</a>
+    </h2>
+
+    {% if post.authors %}
+      <p class="publication-card__authors" itemprop="author">
+        {% if post.highlight_author %}
+          {% capture highlighted_author %}<strong>{{ post.highlight_author }}</strong>{% endcapture %}
+          {{ post.authors | replace_first: post.highlight_author, highlighted_author }}
+        {% else %}
+          {{ post.authors }}
+        {% endif %}
+      </p>
+    {% endif %}
+
+    <p class="publication-card__reference">
+      <cite itemprop="isPartOf">{{ post.venue }}</cite>{% if post.volume %}
+      <strong itemprop="volumeNumber">{{ post.volume }}</strong>{% endif %}{% if post.issue %}({{ post.issue }}){% endif %}{% if post.pages %},
+      <span itemprop="pagination">{{ post.pages }}</span>{% endif %}
+      (<time datetime="{{ post.date | date_to_xmlschema }}" itemprop="datePublished">{{ post.date | date: "%Y" }}</time>).
+    </p>
+  </div>
+</article>
