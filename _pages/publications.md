@@ -12,7 +12,8 @@ author_profile: true
 {% include base_path %}
 
 <div class="publication-list">
-  {% for post in site.publications reversed %}
+  {% assign ordered_publications = site.publications | sort: "display_order" %}
+  {% for post in ordered_publications %}
     {% include publication-card.html %}
   {% endfor %}
 </div>
